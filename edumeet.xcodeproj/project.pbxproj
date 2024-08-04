@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		227A3FE42C2B48C400797954 /* LeaveApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A3FE32C2B48C400797954 /* LeaveApplicationViewController.swift */; };
+		227A3FE82C2B497400797954 /* LeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A3FE72C2B497400797954 /* LeaveViewController.swift */; };
+		227A3FEA2C2B49EF00797954 /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A3FE92C2B49EF00797954 /* StaffViewController.swift */; };
+		227A3FEC2C2B4A0500797954 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A3FEB2C2B4A0500797954 /* DiaryViewController.swift */; };
+		227A3FEE2C2B4A9000797954 /* TimetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A3FED2C2B4A9000797954 /* TimetableViewController.swift */; };
+		227A3FF02C2B4B4200797954 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A3FEF2C2B4B4200797954 /* SubjectViewController.swift */; };
+		227A3FF42C2B4BE600797954 /* assignedlv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A3FF32C2B4BE600797954 /* assignedlv.swift */; };
+		22C9E4B02C2C6F3A00537FA6 /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C9E4AF2C2C6F3A00537FA6 /* SubjectTableViewCell.swift */; };
+		22E47B572C2C8DB700960739 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E47B562C2C8DB700960739 /* SideMenuViewController.swift */; };
+		22E47B592C2C924100960739 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E47B582C2C924100960739 /* SideMenuTableViewCell.swift */; };
+		26971D572C5B81900028DB07 /* DiaryAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26971D562C5B81900028DB07 /* DiaryAddViewController.swift */; };
+		756A284DD680BA4841ECE4F7 /* Pods_edumeetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45D79B0B3BFF04C79113750 /* Pods_edumeetTests.framework */; };
+		79E1ADEC279C0ADE1B49215D /* Pods_edumeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D7F74451A8746A577586E8 /* Pods_edumeet.framework */; };
+		C42CF7CE5CC75D1467F45258 /* Pods_edumeet_edumeetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0515F6F6DE4C6B28661B539D /* Pods_edumeet_edumeetUITests.framework */; };
+		D21B9AC52C2A9E9600F52823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AC42C2A9E9600F52823 /* AppDelegate.swift */; };
+		D21B9AC72C2A9E9600F52823 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AC62C2A9E9600F52823 /* SceneDelegate.swift */; };
+		D21B9AC92C2A9E9600F52823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AC82C2A9E9600F52823 /* ViewController.swift */; };
+		D21B9ACC2C2A9E9600F52823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B9ACA2C2A9E9600F52823 /* Main.storyboard */; };
+		D21B9ACF2C2A9E9600F52823 /* edumeet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D21B9ACD2C2A9E9600F52823 /* edumeet.xcdatamodeld */; };
+		D21B9AD12C2A9E9800F52823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21B9AD02C2A9E9800F52823 /* Assets.xcassets */; };
+		D21B9AD42C2A9E9800F52823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21B9AD22C2A9E9800F52823 /* LaunchScreen.storyboard */; };
+		D21B9ADF2C2A9E9800F52823 /* edumeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9ADE2C2A9E9800F52823 /* edumeetTests.swift */; };
+		D21B9AEA2C2A9E9800F52823 /* edumeetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AE92C2A9E9800F52823 /* edumeetUITests.swift */; };
+		D21B9AF82C2AA2C000F52823 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AF72C2AA2C000F52823 /* ProfileViewController.swift */; };
+		D21B9AFA2C2AA2FF00F52823 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AF92C2AA2FF00F52823 /* DetailViewController.swift */; };
+		D21B9AFC2C2AA35500F52823 /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AFB2C2AA35500F52823 /* NoticeTableViewCell.swift */; };
+		D21B9AFE2C2AA38500F52823 /* UserSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AFD2C2AA38500F52823 /* UserSelectionViewController.swift */; };
+		D21B9B002C2AAAED00F52823 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21B9AFF2C2AAAED00F52823 /* ProfileDetailViewController.swift */; };
+		D29B394E2C3525D00025E5A1 /* LeaveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B394D2C3525D00025E5A1 /* LeaveTableViewCell.swift */; };
+		D29B39502C3526180025E5A1 /* StaffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B394F2C3526180025E5A1 /* StaffTableViewCell.swift */; };
+		D29B39522C3526B20025E5A1 /* AssignedLeaveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B39512C3526B20025E5A1 /* AssignedLeaveTableViewCell.swift */; };
+		D29B39542C3526CB0025E5A1 /* DiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B39532C3526CB0025E5A1 /* DiaryTableViewCell.swift */; };
+		D29B39562C3526F10025E5A1 /* TimeTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B39552C3526F10025E5A1 /* TimeTableTableViewCell.swift */; };
+		D29B39582C353B040025E5A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B39572C353B040025E5A1 /* LoginViewController.swift */; };
+		D29B395A2C353EB70025E5A1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29B39592C353EB70025E5A1 /* ForgotPasswordViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D21B9ADB2C2A9E9800F52823 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21B9AB92C2A9E9600F52823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21B9AC02C2A9E9600F52823;
+			remoteInfo = edumeet;
+		};
+		D21B9AE62C2A9E9800F52823 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21B9AB92C2A9E9600F52823 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21B9AC02C2A9E9600F52823;
+			remoteInfo = edumeet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0515F6F6DE4C6B28661B539D /* Pods_edumeet_edumeetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edumeet_edumeetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		227A3FE32C2B48C400797954 /* LeaveApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveApplicationViewController.swift; sourceTree = "<group>"; };
+		227A3FE72C2B497400797954 /* LeaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveViewController.swift; sourceTree = "<group>"; };
+		227A3FE92C2B49EF00797954 /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
+		227A3FEB2C2B4A0500797954 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		227A3FED2C2B4A9000797954 /* TimetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewController.swift; sourceTree = "<group>"; };
+		227A3FEF2C2B4B4200797954 /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		227A3FF32C2B4BE600797954 /* assignedlv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignedlv.swift; sourceTree = "<group>"; };
+		22C9E4AF2C2C6F3A00537FA6 /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		22E47B562C2C8DB700960739 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		22E47B582C2C924100960739 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		26971D562C5B81900028DB07 /* DiaryAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAddViewController.swift; sourceTree = "<group>"; };
+		366939B4373B55F61CCE0D00 /* Pods-edumeet-edumeetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edumeet-edumeetUITests.release.xcconfig"; path = "Target Support Files/Pods-edumeet-edumeetUITests/Pods-edumeet-edumeetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45D7F74451A8746A577586E8 /* Pods_edumeet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edumeet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		778FF1DA11CF0BB8D835FD67 /* Pods-edumeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edumeet.release.xcconfig"; path = "Target Support Files/Pods-edumeet/Pods-edumeet.release.xcconfig"; sourceTree = "<group>"; };
+		A08B75155D69100B8DB636B7 /* Pods-edumeetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edumeetTests.debug.xcconfig"; path = "Target Support Files/Pods-edumeetTests/Pods-edumeetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B45D79B0B3BFF04C79113750 /* Pods_edumeetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_edumeetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21B9AC12C2A9E9600F52823 /* edumeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = edumeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21B9AC42C2A9E9600F52823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D21B9AC62C2A9E9600F52823 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D21B9AC82C2A9E9600F52823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D21B9ACB2C2A9E9600F52823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D21B9ACE2C2A9E9600F52823 /* edumeet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = edumeet.xcdatamodel; sourceTree = "<group>"; };
+		D21B9AD02C2A9E9800F52823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D21B9AD32C2A9E9800F52823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D21B9AD52C2A9E9800F52823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21B9ADA2C2A9E9800F52823 /* edumeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edumeetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21B9ADE2C2A9E9800F52823 /* edumeetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edumeetTests.swift; sourceTree = "<group>"; };
+		D21B9AE02C2A9E9800F52823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21B9AE52C2A9E9800F52823 /* edumeetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = edumeetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21B9AE92C2A9E9800F52823 /* edumeetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = edumeetUITests.swift; sourceTree = "<group>"; };
+		D21B9AEB2C2A9E9800F52823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21B9AF72C2AA2C000F52823 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D21B9AF92C2AA2FF00F52823 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D21B9AFB2C2AA35500F52823 /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
+		D21B9AFD2C2AA38500F52823 /* UserSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionViewController.swift; sourceTree = "<group>"; };
+		D21B9AFF2C2AAAED00F52823 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
+		D29B394D2C3525D00025E5A1 /* LeaveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveTableViewCell.swift; sourceTree = "<group>"; };
+		D29B394F2C3526180025E5A1 /* StaffTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffTableViewCell.swift; sourceTree = "<group>"; };
+		D29B39512C3526B20025E5A1 /* AssignedLeaveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignedLeaveTableViewCell.swift; sourceTree = "<group>"; };
+		D29B39532C3526CB0025E5A1 /* DiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryTableViewCell.swift; sourceTree = "<group>"; };
+		D29B39552C3526F10025E5A1 /* TimeTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableTableViewCell.swift; sourceTree = "<group>"; };
+		D29B39572C353B040025E5A1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D29B39592C353EB70025E5A1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		D6FC9B0E94733211046FA8D1 /* Pods-edumeet-edumeetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edumeet-edumeetUITests.debug.xcconfig"; path = "Target Support Files/Pods-edumeet-edumeetUITests/Pods-edumeet-edumeetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF8005FC483D96467F7B18BE /* Pods-edumeet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edumeet.debug.xcconfig"; path = "Target Support Files/Pods-edumeet/Pods-edumeet.debug.xcconfig"; sourceTree = "<group>"; };
+		ECA8A1E4FB6696CBB6F1AC30 /* Pods-edumeetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-edumeetTests.release.xcconfig"; path = "Target Support Files/Pods-edumeetTests/Pods-edumeetTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D21B9ABE2C2A9E9600F52823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1ADEC279C0ADE1B49215D /* Pods_edumeet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21B9AD72C2A9E9800F52823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				756A284DD680BA4841ECE4F7 /* Pods_edumeetTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21B9AE22C2A9E9800F52823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42CF7CE5CC75D1467F45258 /* Pods_edumeet_edumeetUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50A16EC7B26552B96E49B564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D7F74451A8746A577586E8 /* Pods_edumeet.framework */,
+				0515F6F6DE4C6B28661B539D /* Pods_edumeet_edumeetUITests.framework */,
+				B45D79B0B3BFF04C79113750 /* Pods_edumeetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D21B9AB82C2A9E9600F52823 = {
+			isa = PBXGroup;
+			children = (
+				D21B9AC32C2A9E9600F52823 /* edumeet */,
+				D21B9ADD2C2A9E9800F52823 /* edumeetTests */,
+				D21B9AE82C2A9E9800F52823 /* edumeetUITests */,
+				D21B9AC22C2A9E9600F52823 /* Products */,
+				EC86C4526232DA55183E6CE9 /* Pods */,
+				50A16EC7B26552B96E49B564 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D21B9AC22C2A9E9600F52823 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D21B9AC12C2A9E9600F52823 /* edumeet.app */,
+				D21B9ADA2C2A9E9800F52823 /* edumeetTests.xctest */,
+				D21B9AE52C2A9E9800F52823 /* edumeetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D21B9AC32C2A9E9600F52823 /* edumeet */ = {
+			isa = PBXGroup;
+			children = (
+				D21B9AC42C2A9E9600F52823 /* AppDelegate.swift */,
+				D21B9AC62C2A9E9600F52823 /* SceneDelegate.swift */,
+				D21B9AC82C2A9E9600F52823 /* ViewController.swift */,
+				D21B9AFD2C2AA38500F52823 /* UserSelectionViewController.swift */,
+				D29B39572C353B040025E5A1 /* LoginViewController.swift */,
+				D29B39592C353EB70025E5A1 /* ForgotPasswordViewController.swift */,
+				D21B9AF72C2AA2C000F52823 /* ProfileViewController.swift */,
+				D21B9AFF2C2AAAED00F52823 /* ProfileDetailViewController.swift */,
+				D21B9AFB2C2AA35500F52823 /* NoticeTableViewCell.swift */,
+				D21B9AF92C2AA2FF00F52823 /* DetailViewController.swift */,
+				227A3FE32C2B48C400797954 /* LeaveApplicationViewController.swift */,
+				227A3FE72C2B497400797954 /* LeaveViewController.swift */,
+				D29B394D2C3525D00025E5A1 /* LeaveTableViewCell.swift */,
+				227A3FE92C2B49EF00797954 /* StaffViewController.swift */,
+				D29B394F2C3526180025E5A1 /* StaffTableViewCell.swift */,
+				227A3FEB2C2B4A0500797954 /* DiaryViewController.swift */,
+				D29B39532C3526CB0025E5A1 /* DiaryTableViewCell.swift */,
+				227A3FED2C2B4A9000797954 /* TimetableViewController.swift */,
+				D29B39552C3526F10025E5A1 /* TimeTableTableViewCell.swift */,
+				227A3FF32C2B4BE600797954 /* assignedlv.swift */,
+				D29B39512C3526B20025E5A1 /* AssignedLeaveTableViewCell.swift */,
+				22E47B562C2C8DB700960739 /* SideMenuViewController.swift */,
+				22E47B582C2C924100960739 /* SideMenuTableViewCell.swift */,
+				227A3FEF2C2B4B4200797954 /* SubjectViewController.swift */,
+				22C9E4AF2C2C6F3A00537FA6 /* SubjectTableViewCell.swift */,
+				26971D562C5B81900028DB07 /* DiaryAddViewController.swift */,
+				D21B9ACA2C2A9E9600F52823 /* Main.storyboard */,
+				D21B9AD02C2A9E9800F52823 /* Assets.xcassets */,
+				D21B9AD22C2A9E9800F52823 /* LaunchScreen.storyboard */,
+				D21B9AD52C2A9E9800F52823 /* Info.plist */,
+				D21B9ACD2C2A9E9600F52823 /* edumeet.xcdatamodeld */,
+			);
+			path = edumeet;
+			sourceTree = "<group>";
+		};
+		D21B9ADD2C2A9E9800F52823 /* edumeetTests */ = {
+			isa = PBXGroup;
+			children = (
+				D21B9ADE2C2A9E9800F52823 /* edumeetTests.swift */,
+				D21B9AE02C2A9E9800F52823 /* Info.plist */,
+			);
+			path = edumeetTests;
+			sourceTree = "<group>";
+		};
+		D21B9AE82C2A9E9800F52823 /* edumeetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D21B9AE92C2A9E9800F52823 /* edumeetUITests.swift */,
+				D21B9AEB2C2A9E9800F52823 /* Info.plist */,
+			);
+			path = edumeetUITests;
+			sourceTree = "<group>";
+		};
+		EC86C4526232DA55183E6CE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF8005FC483D96467F7B18BE /* Pods-edumeet.debug.xcconfig */,
+				778FF1DA11CF0BB8D835FD67 /* Pods-edumeet.release.xcconfig */,
+				D6FC9B0E94733211046FA8D1 /* Pods-edumeet-edumeetUITests.debug.xcconfig */,
+				366939B4373B55F61CCE0D00 /* Pods-edumeet-edumeetUITests.release.xcconfig */,
+				A08B75155D69100B8DB636B7 /* Pods-edumeetTests.debug.xcconfig */,
+				ECA8A1E4FB6696CBB6F1AC30 /* Pods-edumeetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D21B9AC02C2A9E9600F52823 /* edumeet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21B9AEE2C2A9E9800F52823 /* Build configuration list for PBXNativeTarget "edumeet" */;
+			buildPhases = (
+				23F2A193C5329A7991E0C8E0 /* [CP] Check Pods Manifest.lock */,
+				D21B9ABD2C2A9E9600F52823 /* Sources */,
+				D21B9ABE2C2A9E9600F52823 /* Frameworks */,
+				D21B9ABF2C2A9E9600F52823 /* Resources */,
+				CD6F40EE03FE7DDE414CBF3C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = edumeet;
+			productName = edumeet;
+			productReference = D21B9AC12C2A9E9600F52823 /* edumeet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D21B9AD92C2A9E9800F52823 /* edumeetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21B9AF12C2A9E9800F52823 /* Build configuration list for PBXNativeTarget "edumeetTests" */;
+			buildPhases = (
+				A04D4036223E820C0233AA74 /* [CP] Check Pods Manifest.lock */,
+				D21B9AD62C2A9E9800F52823 /* Sources */,
+				D21B9AD72C2A9E9800F52823 /* Frameworks */,
+				D21B9AD82C2A9E9800F52823 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D21B9ADC2C2A9E9800F52823 /* PBXTargetDependency */,
+			);
+			name = edumeetTests;
+			productName = edumeetTests;
+			productReference = D21B9ADA2C2A9E9800F52823 /* edumeetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D21B9AE42C2A9E9800F52823 /* edumeetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D21B9AF42C2A9E9800F52823 /* Build configuration list for PBXNativeTarget "edumeetUITests" */;
+			buildPhases = (
+				30D2DA58A3B9920D51DDDEBC /* [CP] Check Pods Manifest.lock */,
+				D21B9AE12C2A9E9800F52823 /* Sources */,
+				D21B9AE22C2A9E9800F52823 /* Frameworks */,
+				D21B9AE32C2A9E9800F52823 /* Resources */,
+				64597D71D9FBDA8328B5366A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D21B9AE72C2A9E9800F52823 /* PBXTargetDependency */,
+			);
+			name = edumeetUITests;
+			productName = edumeetUITests;
+			productReference = D21B9AE52C2A9E9800F52823 /* edumeetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D21B9AB92C2A9E9600F52823 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = irohub;
+				TargetAttributes = {
+					D21B9AC02C2A9E9600F52823 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D21B9AD92C2A9E9800F52823 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D21B9AC02C2A9E9600F52823;
+					};
+					D21B9AE42C2A9E9800F52823 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D21B9AC02C2A9E9600F52823;
+					};
+				};
+			};
+			buildConfigurationList = D21B9ABC2C2A9E9600F52823 /* Build configuration list for PBXProject "edumeet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D21B9AB82C2A9E9600F52823;
+			productRefGroup = D21B9AC22C2A9E9600F52823 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D21B9AC02C2A9E9600F52823 /* edumeet */,
+				D21B9AD92C2A9E9800F52823 /* edumeetTests */,
+				D21B9AE42C2A9E9800F52823 /* edumeetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D21B9ABF2C2A9E9600F52823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21B9AD42C2A9E9800F52823 /* LaunchScreen.storyboard in Resources */,
+				D21B9AD12C2A9E9800F52823 /* Assets.xcassets in Resources */,
+				D21B9ACC2C2A9E9600F52823 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21B9AD82C2A9E9800F52823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21B9AE32C2A9E9800F52823 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23F2A193C5329A7991E0C8E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edumeet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30D2DA58A3B9920D51DDDEBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edumeet-edumeetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64597D71D9FBDA8328B5366A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edumeet-edumeetUITests/Pods-edumeet-edumeetUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edumeet-edumeetUITests/Pods-edumeet-edumeetUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-edumeet-edumeetUITests/Pods-edumeet-edumeetUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A04D4036223E820C0233AA74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-edumeetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6F40EE03FE7DDE414CBF3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edumeet/Pods-edumeet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-edumeet/Pods-edumeet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-edumeet/Pods-edumeet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D21B9ABD2C2A9E9600F52823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227A3FEE2C2B4A9000797954 /* TimetableViewController.swift in Sources */,
+				D29B39562C3526F10025E5A1 /* TimeTableTableViewCell.swift in Sources */,
+				227A3FE82C2B497400797954 /* LeaveViewController.swift in Sources */,
+				227A3FF42C2B4BE600797954 /* assignedlv.swift in Sources */,
+				22C9E4B02C2C6F3A00537FA6 /* SubjectTableViewCell.swift in Sources */,
+				D21B9AFE2C2AA38500F52823 /* UserSelectionViewController.swift in Sources */,
+				D21B9B002C2AAAED00F52823 /* ProfileDetailViewController.swift in Sources */,
+				D21B9AC92C2A9E9600F52823 /* ViewController.swift in Sources */,
+				D29B394E2C3525D00025E5A1 /* LeaveTableViewCell.swift in Sources */,
+				D21B9ACF2C2A9E9600F52823 /* edumeet.xcdatamodeld in Sources */,
+				D29B395A2C353EB70025E5A1 /* ForgotPasswordViewController.swift in Sources */,
+				D21B9AFC2C2AA35500F52823 /* NoticeTableViewCell.swift in Sources */,
+				227A3FF02C2B4B4200797954 /* SubjectViewController.swift in Sources */,
+				227A3FE42C2B48C400797954 /* LeaveApplicationViewController.swift in Sources */,
+				D29B39582C353B040025E5A1 /* LoginViewController.swift in Sources */,
+				227A3FEA2C2B49EF00797954 /* StaffViewController.swift in Sources */,
+				D21B9AF82C2AA2C000F52823 /* ProfileViewController.swift in Sources */,
+				26971D572C5B81900028DB07 /* DiaryAddViewController.swift in Sources */,
+				D29B39522C3526B20025E5A1 /* AssignedLeaveTableViewCell.swift in Sources */,
+				227A3FEC2C2B4A0500797954 /* DiaryViewController.swift in Sources */,
+				D21B9AFA2C2AA2FF00F52823 /* DetailViewController.swift in Sources */,
+				22E47B592C2C924100960739 /* SideMenuTableViewCell.swift in Sources */,
+				D21B9AC52C2A9E9600F52823 /* AppDelegate.swift in Sources */,
+				22E47B572C2C8DB700960739 /* SideMenuViewController.swift in Sources */,
+				D29B39502C3526180025E5A1 /* StaffTableViewCell.swift in Sources */,
+				D29B39542C3526CB0025E5A1 /* DiaryTableViewCell.swift in Sources */,
+				D21B9AC72C2A9E9600F52823 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21B9AD62C2A9E9800F52823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21B9ADF2C2A9E9800F52823 /* edumeetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D21B9AE12C2A9E9800F52823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21B9AEA2C2A9E9800F52823 /* edumeetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D21B9ADC2C2A9E9800F52823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21B9AC02C2A9E9600F52823 /* edumeet */;
+			targetProxy = D21B9ADB2C2A9E9800F52823 /* PBXContainerItemProxy */;
+		};
+		D21B9AE72C2A9E9800F52823 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21B9AC02C2A9E9600F52823 /* edumeet */;
+			targetProxy = D21B9AE62C2A9E9800F52823 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D21B9ACA2C2A9E9600F52823 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D21B9ACB2C2A9E9600F52823 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D21B9AD22C2A9E9800F52823 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D21B9AD32C2A9E9800F52823 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D21B9AEC2C2A9E9800F52823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D21B9AED2C2A9E9800F52823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D21B9AEF2C2A9E9800F52823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF8005FC483D96467F7B18BE /* Pods-edumeet.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = edumeet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.edumeet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D21B9AF02C2A9E9800F52823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778FF1DA11CF0BB8D835FD67 /* Pods-edumeet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = edumeet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.edumeet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D21B9AF22C2A9E9800F52823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08B75155D69100B8DB636B7 /* Pods-edumeetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = edumeetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.edumeetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/edumeet.app/edumeet";
+			};
+			name = Debug;
+		};
+		D21B9AF32C2A9E9800F52823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA8A1E4FB6696CBB6F1AC30 /* Pods-edumeetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = edumeetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.edumeetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/edumeet.app/edumeet";
+			};
+			name = Release;
+		};
+		D21B9AF52C2A9E9800F52823 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6FC9B0E94733211046FA8D1 /* Pods-edumeet-edumeetUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = edumeetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.edumeetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = edumeet;
+			};
+			name = Debug;
+		};
+		D21B9AF62C2A9E9800F52823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366939B4373B55F61CCE0D00 /* Pods-edumeet-edumeetUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = edumeetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iroid.edumeetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = edumeet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D21B9ABC2C2A9E9600F52823 /* Build configuration list for PBXProject "edumeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21B9AEC2C2A9E9800F52823 /* Debug */,
+				D21B9AED2C2A9E9800F52823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21B9AEE2C2A9E9800F52823 /* Build configuration list for PBXNativeTarget "edumeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21B9AEF2C2A9E9800F52823 /* Debug */,
+				D21B9AF02C2A9E9800F52823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21B9AF12C2A9E9800F52823 /* Build configuration list for PBXNativeTarget "edumeetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21B9AF22C2A9E9800F52823 /* Debug */,
+				D21B9AF32C2A9E9800F52823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D21B9AF42C2A9E9800F52823 /* Build configuration list for PBXNativeTarget "edumeetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D21B9AF52C2A9E9800F52823 /* Debug */,
+				D21B9AF62C2A9E9800F52823 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D21B9ACD2C2A9E9600F52823 /* edumeet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D21B9ACE2C2A9E9600F52823 /* edumeet.xcdatamodel */,
+			);
+			currentVersion = D21B9ACE2C2A9E9600F52823 /* edumeet.xcdatamodel */;
+			path = edumeet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D21B9AB92C2A9E9600F52823 /* Project object */;
+}

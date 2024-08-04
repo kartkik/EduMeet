@@ -1,0 +1,6 @@
+framework module Pods_edumeetTests {
+  umbrella header "Pods-edumeetTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
